@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <meta name="description" content="page about event hacking ">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HackHowl</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="/" class="header__logo">
+                    <img class="header__logo--left" src="assets/logo.png" alt="logo">
+                    <img class="header__logo--right" src="assets/letters.png" alt="">
+                </a>
+                <nav class="main-nav">
+                    <button class="main-nav__close"><i class="ri-close-line"></i></button>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="index.html" class="main-nav__link">Inicio</a> </li>
+                        <li class="main-nav__item"><a href="index.html#quienes-somos" class="main-nav__link">Quiénes Somos</a> </li>
+                        <li class="main-nav__item"><a href="entrenamiento.html" class="main-nav__link active">Zona de Entrenamiento</a> </li>
+                        <li class="main-nav__item"><a href="sponsors.html" class="main-nav__link">Patrocinadores</a> </li>
+                        <li class="main-nav__item"><a href="#" class="main-nav__link">Convocatoria</a> </li>
+                 <li class="main-nav__item"><a href="merchandising.html" class="main-nav__link">Merchandising oficial</a> </li> 
+                    </ul>
+                </nav>
+        
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScFHTq5zmUgHfvSUid6VjSovlNrwDz6vEQ1XQoLmIHwco7Lbw/viewform?usp=sf_link" class="header__btn btn btn--white">
+    Inscribirse
+</a>
+
+                <button class="header__menu">
+                    <i class="ri-menu-5-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="test">
+            <div class="container">
+                <h1 class="test__title subtitle"> ZONA DE <span class="subtitle--red">ENTRENAMIENTO</span></h1>
+                <p class="test__copy">Practica en una máquina con vulnerabilidades, pon a prueba tus habilidades como hacker ético y acepta el desafío de Capturar la Bandera.</p>
+                                <p class="test__copy">¿No estás familiarizado con el concepto de Captura la Bandera? Es un juego en el que debes demostrar tus habilidades resolviendo desafíos de seguridad y superando obstáculos para alcanzar y capturar la 'bandera'. Enfréntate a este reto y aprende cómo poner a prueba las vulnerabilidades de una máquina en un entorno controlado pero realista.</p>
+
+                <div class="test__cards">
+                    <div class="practice">
+                        <h3 class="practice__title">ISO PARA PRACTICAR</h3>
+                        <p class="practice__copy">Descarga la máquina y empieza a hackear</p>
+                        <button class="practice__btn btn btn--white" onclick="window.location.href='https://drive.google.com/file/d/1z0dAKPFmzzsQdhAPD6uO-vONH4gALcY6/view?usp=sharing'">Descargar</button>
+
+                    </div>
+                    <div class="points">
+                        <h3 class="points__title">PUNTOS</h3>
+                        <span class="points__value">0</span>
+                    </div>
+                    <div class="guide">
+                        <h3 class="guide__title">GUIA DE DESCARGA</h3>
+                        <p class="guide__copy">¿Tienes dudas sobre cómo ejecutar la máquina en tu PC? Consulta la guía de descarga de la máquina</p>
+                        <button class="guide__btn btn btn--white" onclick="window.open('https://drive.google.com/file/d/1DukFNFPUZbsYAp-MC2gir6ANXSZp0Wk2/view?usp=sharing')">Descargar</button>
+
+                        
+
+                    </div>
+                    <div class="guide">
+                        
+
+                        <h3 class="guide__title">GUIA DE LA BANDERA</h3>
+                        <p class="guide__copy">Revisa la guía sobre cómo encontrar la bandera</p>
+                        <button class="guide__btn btn btn--white" onclick="window.open('https://drive.google.com/file/d/1prB3BmOW9SraSkhJ6PQWxzKriT0GH3wp/view')">Descargar</button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flag">
+            <h2 class="flag__title subtitle">BANDERA</h2>
+            <p class="flag__copy">Encuentra la bandera de la máquina y escribe las respuestas</p>
+            <form class="form">
+                <div class="form__row">
+                    <div class="form__item">
+                        <label class="form__label" for="FELICIDADES">
+                            <span class="form__label--title">Responde</span>
+                            <span class="form__label--points">1000 pts C/D</span>
+                        </label>
+                        <input class="form__input" type="text" name="servicios" placeholder="Pista servicios" id="servicios">
+                    </div>
+                </div>
+                
+                
+               
+                <input type="button" class="practice__btn btn btn--white button" onclick="comprobarRespuestas()" value="Comprobar Respuestas">
+            
+            
+            
+                <div id="respuestaIncorrecta" style="color: red;"></div>
+                <div id="respuestaCorrecta" style="color: rgb(45, 230, 70)(0, 255, 34);"></div>
+            </form>
+            
+            <script>
+var _0x4c624e=_0x3dd8;function _0x3dd8(_0x1e7eaa,_0x470063){var _0x288284=_0x2882();return _0x3dd8=function(_0x3dd858,_0x5e004d){_0x3dd858=_0x3dd858-0x118;var _0x12bb2d=_0x288284[_0x3dd858];return _0x12bb2d;},_0x3dd8(_0x1e7eaa,_0x470063);}function _0x2882(){var _0x14855=['querySelector','innerText','servicios','7052390ulCbwx','.form','getElementById','4552GOHZqw','3460148ohMoiX','querySelectorAll','value','DOMContentLoaded','56067nskiYE','key','preventDefault','puntos','respuesta','.form__label','26797392AifdIQ','6146lPhIVH','.form__label--points','.form__input','28dLscYN','11215578MUtwGX','addEventListener','\x20pts\x20C/D','keydown','139057ARvLIj','forEach'];_0x2882=function(){return _0x14855;};return _0x2882();}(function(_0x1fff93,_0x29f6ff){var _0x2f7410=_0x3dd8,_0x3b1898=_0x1fff93();while(!![]){try{var _0x43f8f2=-parseInt(_0x2f7410(0x11c))/0x1+-parseInt(_0x2f7410(0x125))/0x2+parseInt(_0x2f7410(0x129))/0x3*(-parseInt(_0x2f7410(0x133))/0x4)+-parseInt(_0x2f7410(0x121))/0x5+parseInt(_0x2f7410(0x118))/0x6+parseInt(_0x2f7410(0x130))/0x7*(-parseInt(_0x2f7410(0x124))/0x8)+parseInt(_0x2f7410(0x12f))/0x9;if(_0x43f8f2===_0x29f6ff)break;else _0x3b1898['push'](_0x3b1898['shift']());}catch(_0xf16c04){_0x3b1898['push'](_0x3b1898['shift']());}}}(_0x2882,0xe4b21));var puntos=0x0;function comprobarRespuestas(){var _0x421032=_0x3dd8,_0x959374=document['querySelector'](_0x421032(0x122)),_0x11baf0=_0x959374[_0x421032(0x126)](_0x421032(0x132)),_0x1e9d7c=_0x959374[_0x421032(0x126)](_0x421032(0x12e)),_0x3127c0={'servicios':{'respuesta':'FLAG{N7\x20KSA_01}','puntos':0x3e8}};puntos=0x0,_0x11baf0[_0x421032(0x11d)](function(_0x264d6c,_0x4f918c){var _0x41012f=_0x421032,_0x280ede=_0x264d6c['name'],_0x13305c=_0x264d6c[_0x41012f(0x127)],_0x33a950=_0x3127c0[_0x280ede][_0x41012f(0x12d)];if(_0x13305c===_0x33a950){puntos+=_0x3127c0[_0x280ede][_0x41012f(0x12c)];var _0x4267df=document[_0x41012f(0x123)]('respuestaCorrecta');_0x4267df[_0x41012f(0x11f)]='Respuesta\x20correcta\x20(\x20'+_0x280ede+'\x20)',setTimeout(function(){var _0x9b7377=_0x41012f;_0x4267df[_0x9b7377(0x11f)]='';},0xbb8);}else{}var _0x289377=_0x3127c0[_0x280ede][_0x41012f(0x12c)];_0x1e9d7c[_0x4f918c][_0x41012f(0x11e)](_0x41012f(0x131))['innerText']=_0x289377+_0x41012f(0x11a);}),document[_0x421032(0x11e)]('.points__value')[_0x421032(0x11f)]=puntos;}document[_0x4c624e(0x119)](_0x4c624e(0x128),function(){var _0x2af846=_0x4c624e,_0xe5d0fe=document[_0x2af846(0x123)](_0x2af846(0x120));_0xe5d0fe[_0x2af846(0x119)](_0x2af846(0x11b),function(_0x114833){var _0x44eed8=_0x2af846;_0x114833[_0x44eed8(0x12a)]==='Enter'&&(_0x114833[_0x44eed8(0x12b)](),comprobarRespuestas());});});
+</script>
+         
+         
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__body">
+                <div class="footer__left">
+                    <img class="footer__image--left" src="assets/logo.png" alt="">
+                    <img class="footer__image--right" src="assets/letters.png" alt="">
+                </div>
+                <span class="footer__copy">© Todos los derechos a HackHowl</span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
