@@ -6,3 +6,7 @@ const toggleMenu = () => nav.classList.toggle('active')
 
 btnMenu.addEventListener('click',toggleMenu)
 btnClose.addEventListener('click',toggleMenu)
+
+ document.addEventListener('DOMContentLoaded', function() {
+      document.title = "HackHowl";
+    });
