@@ -318,8 +318,15 @@ input {
 .card__image {
   height: 200px;
 }
+
 .card__figure {
   filter: grayscale(100%);
+}
+.card__image2, .card__figure {
+  width: 100%;
+}
+.card__image2 {
+  height: 700px;
 }
 
 .about {
